@@ -9,6 +9,6 @@ My neovim setup. Plugins are managed by Plug and include:
 ```
 mkdir -p ~/.config/nvim \
 git clone https://github.com/peterjcaulfield/nvim ~/.config/nvim \
-cd ./install.sh \
+cd ~/.config/nvim && ./install.sh \
 nvim +PlugClean +PlugInstall +qa
 ```
