@@ -10,11 +10,12 @@ nmap <leader>s :w!<cr>
 " Open splits
 nmap vs :vsplit<cr>
 nmap sp :split<cr>
-" fzf files
-nmap <leader>f :Files<cr>
-" fzf commands
+
+" fzf mappings
+nmap <leader>f :Files<cr> 
 nmap <leader>c :Commands<cr>
-" setup buffer navigation
+
+" Airline buffer navigation
 nmap <leader>1 <Plug>AirlineSelectTab1
 nmap <leader>2 <Plug>AirlineSelectTab2
 nmap <leader>3 <Plug>AirlineSelectTab3
@@ -29,5 +30,5 @@ nmap <leader>= <Plug>AirlineSelectNextTab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Insert mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Easy escaping to normal mode
+" Easy escaping to normal mode
 imap jj <esc>
