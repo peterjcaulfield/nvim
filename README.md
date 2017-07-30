@@ -5,4 +5,10 @@ My neovim setup. Plugins are managed by Plug and include:
 - Oceanic - themeing
 - FZF - fuzzy search
 
-Run `:PlugInstall` from nvim after running `./install.sh` to get going.
+### install
+```
+mkdir -p ~/.config/nvim \
+git clone https://github.com/peterjcaulfield/nvim ~/.config/nvim \
+cd ./install.sh \
+nvim +PlugClean +PlugInstall +qa
+```
