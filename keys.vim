@@ -7,9 +7,15 @@ let g:mapleader = "\<Space>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " save file
 nmap <leader>s :w!<cr>
+" nuke the focused buffer
+nmap <leader>x :bd!<cr>
 " Open splits
 nmap vs :vsplit<cr>
 nmap sp :split<cr>
+" Open terminal
+nmap <leader>t :terminal<cr>
+" make it easer to execute commands
+nmap ; :
 
 " fzf mappings
 nmap <leader>f :Files<cr> 
@@ -32,3 +38,7 @@ nmap <leader>= <Plug>AirlineSelectNextTab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Easy escaping to normal mode
 imap jj <esc>
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Terminal mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+tnoremap <Esc> <C-\><C-n>
