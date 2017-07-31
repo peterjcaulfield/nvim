@@ -33,4 +33,7 @@ set textwidth=80
 " Swap files out of the project root
 set backupdir=~/.config/nvim/backup//
 set directory=~/.config/nvim/swap//
-
+highlight TermCursor ctermfg=red guifg=red
+" split settings
+set splitbelow
+set splitright
