@@ -7,8 +7,8 @@ My neovim setup. Plugins are managed by Plug and include:
 
 ### install
 ```
-mkdir -p ~/.config/nvim \
-git clone https://github.com/peterjcaulfield/nvim ~/.config/nvim \
-cd ~/.config/nvim && ./install.sh \
+mkdir -p ~/.config/nvim &&\
+git clone https://github.com/peterjcaulfield/nvim ~/.config/nvim &&\
+cd ~/.config/nvim && ./install.sh &&\
 nvim +PlugClean +PlugInstall +qa
 ```
