@@ -41,4 +41,6 @@ imap jj <esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Terminal mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-tnoremap <Esc> <C-\><C-n>
+" double j to quit terminal mode easy
+" can't remmap esc as fzf needs it 
+tnoremap jj <C-\><C-n>:q<CR>

@@ -44,3 +44,5 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " FZF
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" setup fzf to use ag with an ignore file 
+let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore -g ""'
