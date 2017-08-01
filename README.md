@@ -4,6 +4,7 @@ My neovim setup. Plugins are managed by Plug and include:
 - Airline - status/tab line
 - Oceanic - themeing
 - FZF - fuzzy search
+- Ale - linting
 
 ### install
 ```
