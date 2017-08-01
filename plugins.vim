@@ -45,3 +45,8 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " setup fzf to use ag with an ignore file 
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore -g ""'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ale
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ale_linters = { 'javascript': ['eslint'] }
+
