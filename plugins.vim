@@ -21,6 +21,8 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 " Deoplete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:deoplete#enable_at_startup = 1
+" make path completion relative to current file/buffer path
+let g:deoplete#file#enable_buffer_path = 1
 " tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " tern
