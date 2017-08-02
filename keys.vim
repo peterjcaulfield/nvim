@@ -13,9 +13,17 @@ nmap <leader>x :bd!<cr>
 nmap vs :vsplit<cr>
 nmap sp :split<cr>
 " Open terminal
-nmap <leader>t :terminal<cr>
+" nmap <leader>t :terminal<cr>
 " make it easer to execute commands
 nmap ; :
+
+" open an 80 column split in terminal mode
+func TermSplit()
+  execute "vsplit"
+  execute "vertical resize 80"
+  execute "terminal"
+endfunc
+nmap <leader>t :exec TermSplit()<cr>
 
 " fzf mappings
 nmap <leader>f :Files<cr> 
@@ -55,6 +63,10 @@ endfunc
 for dir in ["h", "j", "l", "k"]
     call s:mapMoveToWindowInDirection(dir)
 endfor
+
+"nnoremap <silent> <Leader>+ :exe "vertical resize " . (&columns * 1/2)<CR>
+"nnoremap <silent> <Leader>- :exe "vertical resize " . (&columns * 1/3)<CR>
+nmap <Leader>+ :echo '' . &columns<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Insert mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -63,8 +75,10 @@ imap jj <esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Terminal mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" double j to quit terminal mode easy
-" can't remmap esc as fzf needs it 
+" close terminal window easy
 tnoremap jj <C-\><C-n>:q<CR>
+" close terminal buffer easy
+tnoremap jx <C-\><C-n>:bd!<CR>
 " easily jump back to normal window
 tnoremap <Space><Space> <C-\><C-n><C-w><C-p>
+
