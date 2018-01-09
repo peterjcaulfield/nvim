@@ -9,6 +9,9 @@ let g:mapleader = "\<Space>"
 nmap <leader>s :w!<cr>
 " nuke the focused buffer
 nmap <leader>x :bd!<cr>
+" paste from default yank buffer
+nmap <leader>p "0p
+
 " Open splits
 nmap vs :vsplit<cr>
 nmap sp :split<cr>
