@@ -7,7 +7,7 @@ if (has("termguicolors"))
 endif
 
 " Theme
-colorscheme OceanicNext
+silent! colorscheme OceanicNext
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
