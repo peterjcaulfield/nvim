@@ -48,7 +48,7 @@ let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore -g ""'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_linters = { 'javascript': ['eslint', 'flow'] }
+let g:ale_linters = { 'javascript': ['eslint', 'flow'], 'typescript': ['tslint', 'tsserver'] }
 highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
 highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
 let g:ale_sign_error = 'X' " could use emoji
