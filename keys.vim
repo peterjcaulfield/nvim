@@ -75,6 +75,7 @@ nmap <Leader>+ :echo '' . &columns<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Easy escaping to normal mode
 imap jj <esc>
+" insert hash rocket
 imap <c-l> <space>=><space>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Terminal mode
