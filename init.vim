@@ -12,6 +12,13 @@ Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdcommenter'
 Plug 'hashivim/vim-terraform'
+Plug 'mattn/emmet-vim'
+Plug 'wincent/terminus'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
