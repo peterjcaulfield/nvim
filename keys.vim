@@ -20,11 +20,12 @@ nmap sp :split<cr>
 " make it easer to execute commands
 nmap ; :
 
-" open an 80 column split in terminal mode
+" open an 120 column split in terminal mode
 func TermSplit()
   execute "vsplit"
-  execute "vertical resize 80"
+  execute "vertical resize 120"
   execute "terminal"
+  execute "startinsert"
 endfunc
 nmap <leader>t :exec TermSplit()<cr>
 
@@ -84,6 +85,10 @@ imap <c-l> <space>=><space>
 tnoremap jj <C-\><C-n>:q<CR>
 " close terminal buffer easy
 tnoremap jx <C-\><C-n>:bd!<CR>
-" easily jump back to normal window
-tnoremap <Space><Space> <C-\><C-n><C-w><C-p>
+tnoremap <C-w>h <C-\><C-n><C-w>h
 
+tnoremap <C-w>j <C-\><C-n><C-w>j
+
+tnoremap <C-w>k <C-\><C-n><C-w>k
+
+tnoremap <C-w>l <C-\><C-n><C-w>l
