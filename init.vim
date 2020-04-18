@@ -8,7 +8,6 @@ Plug 'neoclide/coc.nvim', { 'branch' : 'release' }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim', { 'do': 'brew install rg' }
-Plug 'w0rp/ale'
 Plug 'scrooloose/nerdcommenter'
 Plug 'hashivim/vim-terraform'
 Plug 'mattn/emmet-vim'

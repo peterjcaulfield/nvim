@@ -1,10 +1,9 @@
 My neovim setup. Plugins are managed by Plug and include:
 
-- Deoplete - tab completion
+- Coc.vim - tab completion/linting
 - Airline - status/tab line
 - Oceanic - themeing
 - FZF - fuzzy search
-- Ale - linting
 
 ### install
 ```

@@ -27,24 +27,6 @@ let g:NERDSpaceDelims = 1
 " setup fzf to use ag with an ignore file
 let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore -g ""'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Ale
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:ale_linters = { 'javascript': ['eslint'], 'typescript': ['tslint', 'tsserver'] }
-" let g:ale_linters = { 'javascript': ['eslint'], 'typescript': ['tslint'] }
-" highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
-" highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
-" let g:ale_sign_error = 'X' " could use emoji
-" let g:ale_sign_warning = '?' " could use emoji
-" let g:ale_statusline_format = ['X %d', '? %d', '']
-" " %linter% is the name of the linter that provided the message
-" " %s is the error or warning message
-" let g:ale_echo_msg_format = '%linter% says %s'
-" let g:ale_open_list = 1 " show loclist
-" autocmd QuitPre * if empty(&bt) | lclose | endif " autoclose loclist window when closing main buffer
-" " Map keys to navigate between lines with errors and warnings.
-" nnoremap <leader>an :ALENextWrap<cr>
-" nnoremap <leader>ap :ALEPreviousWrap<cr>
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Goyo / Limelight
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd! User GoyoEnter Limelight
@@ -60,6 +42,7 @@ let s:coc_extensions = [
 			\ 'coc-tag',
             \ 'coc-snippets',
             \ 'coc-prettier',
+            \ 'coc-eslint',
 			\]
 
 for extension in s:coc_extensions
@@ -198,12 +181,22 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 " global coc config
 let g:coc_user_config = {}
 let g:coc_user_config['coc.preferences.jumpCommand'] = ':vsp'
+" prettier
 let g:coc_user_config['coc.preferences.formatOnSaveFiletypes'] = [
     \'javascript',
     \'typescript',
     \'typescriptreact'
     \'typescript.tsx'
 \]
+" eslint
+let g:coc_user_config['eslint.enable'] = 'true'
+let g:coc_user_config['eslint.filetypes'] = [
+    \'javascript',
+    \'typescript',
+    \'typescriptreact'
+    \'typescript.tsx'
+\]
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vimwiki
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
