@@ -1,3 +1,8 @@
+" needed for vim wiki
+set nocompatible
+filetype plugin on
+syntax on
+" needed for vim wiki
 set guioptions-=T               " Removes top toolbar
 set guioptions-=r               " Removes right hand scroll bar
 set go-=L                       " Removes left hand scroll bar
@@ -46,5 +51,14 @@ augroup OpenAllFoldsOnFileOpen
     autocmd BufRead * normal zR
 augroup END
 autocmd FileType scss setlocal shiftwidth=2 tabstop=2
+autocmd FileType md setlocal shiftwidth=2 tabstop=2
 autocmd BufWinEnter,WinEnter term://* startinsert
 
+" https://vi.stackexchange.com/questions/454/whats-the-simplest-way-to-strip-trailing-whitespace-from-all-lines-in-a-file
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+autocmd BufWritePre * :call TrimWhitespace()
