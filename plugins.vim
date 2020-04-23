@@ -182,12 +182,14 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 let g:coc_user_config = {}
 let g:coc_user_config['coc.preferences.jumpCommand'] = ':vsp'
 " prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:coc_user_config['coc.preferences.formatOnSaveFiletypes'] = [
     \'javascript',
     \'typescript',
     \'typescriptreact'
     \'typescript.tsx'
 \]
+let g:coc_user_config['coc.preferences.formatOnSaveFiletypes'] = ['*']
 " eslint
 let g:coc_user_config['eslint.enable'] = 'true'
 let g:coc_user_config['eslint.filetypes'] = [

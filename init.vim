@@ -9,7 +9,6 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim', { 'do': 'brew install rg' }
 Plug 'scrooloose/nerdcommenter'
-Plug 'hashivim/vim-terraform'
 Plug 'mattn/emmet-vim'
 Plug 'wincent/terminus'
 Plug 'tpope/vim-repeat'

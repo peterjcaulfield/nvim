@@ -31,6 +31,7 @@ set mouse=a
 set wildmode=longest,list       "format wildmenu tab completion
 set wildmenu                    "make tab completion for files/buffers act like bash
 set foldmethod=indent
+set foldlevel=99
 set wildignore+=*/vendor/**,*/node_modules/**,*/lib/**     " I don't want to pull up these folders/files when calling CtrlP
 "" Make it obvious where 80 characters is
 set colorcolumn=80

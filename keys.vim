@@ -30,7 +30,7 @@ endfunc
 nmap <leader>t :exec TermSplit()<cr>
 
 " fzf mappings
-nmap <leader>f :Files<cr> 
+nmap <leader>f :Files<cr>
 nmap <leader>c :Commands<cr>
 
 " Airline buffer navigation
@@ -53,7 +53,7 @@ func! s:mapMoveToWindowInDirection(direction)
         stopinsert
         execute "wincmd" a:direction
         " when moving to terminal mode window start in insert mode
-        if &buftype == 'terminal' 
+        if &buftype == 'terminal'
             startinsert!
         endif
     endfunc
@@ -71,6 +71,8 @@ endfor
 "nnoremap <silent> <Leader>+ :exe "vertical resize " . (&columns * 1/2)<CR>
 "nnoremap <silent> <Leader>- :exe "vertical resize " . (&columns * 1/3)<CR>
 nmap <Leader>+ :echo '' . &columns<CR>
+" Enable folding with the spacebar
+nnoremap <space> za
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Insert mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
