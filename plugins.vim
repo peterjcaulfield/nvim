@@ -96,6 +96,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> cn <Plug>(coc-rename)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -191,14 +192,10 @@ let g:coc_user_config['coc.preferences.formatOnSaveFiletypes'] = [
 \]
 let g:coc_user_config['coc.preferences.formatOnSaveFiletypes'] = ['*']
 " eslint
-let g:coc_user_config['eslint.enable'] = 'true'
-let g:coc_user_config['eslint.filetypes'] = [
-    \'javascript',
-    \'typescript',
-    \'typescriptreact'
-    \'typescript.tsx'
-\]
-
+let g:coc_user_config['eslint.filetypes'] = ['javascript', 'javascriptreact', 'typescript', 'typescriptreact']
+" let g:coc_user_config['eslint.options'] = 'true'
+" https://github.com/neoclide/coc-eslint/issues/56#issuecomment-647296257
+let g:coc_user_config['eslint.nodePath'] = './node_modules'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vimwiki
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

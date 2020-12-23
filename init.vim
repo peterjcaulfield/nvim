@@ -20,6 +20,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
