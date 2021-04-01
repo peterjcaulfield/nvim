@@ -2,6 +2,7 @@
 set nocompatible
 filetype plugin on
 syntax on
+set redrawtime=10000
 " needed for vim wiki
 set guioptions-=T               " Removes top toolbar
 set guioptions-=r               " Removes right hand scroll bar

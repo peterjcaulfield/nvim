@@ -181,6 +181,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 autocmd FileType json syntax match Comment +\/\/.\+$+
 " global coc config
 let g:coc_user_config = {}
+
 let g:coc_user_config['coc.preferences.jumpCommand'] = ':vsp'
 " prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
