@@ -1,0 +1,19 @@
+{
+  "tsserver.log": "verbose",
+  "languageserver": {
+    "tsserver": {
+      "trace.server": "verbose",
+      "filetypes": [".ts", ".js", ".tsx"]
+    }
+  },
+  "suggest.maxPreviewWidth": 1000,
+  "diagnostic.maxWindowWidth": 1000,
+  "dialog.maxWidth": 1000,
+  "signature.maxWindowWidth": 1000,
+  "coc.preferences.previewMaxWidth": 1000,
+  "suggest.maxPreviewHeight": 400,
+  "diagnostic.maxWindowHeight": 400,
+  "dialog.maxHeight": 400,
+  "signature.maxWindowHeight": 400,
+  "coc.preferences.previewMaxHeight": 400
+}
