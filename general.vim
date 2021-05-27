@@ -46,6 +46,7 @@ set splitbelow
 set splitright
 " auto refresh files that change whilst editing
 set autoread
+au CursorHold,CursorHoldI * checktime
 set updatetime=300
 " Keep all folds open when a file is opened
 augroup OpenAllFoldsOnFileOpen
